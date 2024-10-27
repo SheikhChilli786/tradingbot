@@ -6,7 +6,7 @@ import asyncio
 from datetime import datetime
 import threading
 from functools import wraps
-import os=
+import os
 import sys
 from dotenv import load_dotenv  # Import load_dotenv to load .env files
 load_dotenv()
