@@ -18,11 +18,11 @@ if hasattr(asyncio, 'WindowsSelectorEventLoopPolicy'):
 # Logging configuration
 logging.basicConfig(
     level=logging.INFO,  # Set the logging level
+    format='%(asctime)s - %(levelname)s - %(message)s',  # Define the log message format
     handlers=[
         logging.StreamHandler(sys.stdout),  # Output logs to stdout
     ]
 )
-
 # API Credentials and Exchange Configuration
 API_KEY = os.environ.get('API_KEY')
 API_SECRET = os.environ.get('SECRET_KEY')
